@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f3;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms;
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3498db88);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #9b59b688);
+}
+
+/* Keyframes for rotating animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Styling */
+.card {
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: #ecf0f1;
+  border-radius: 12px;
+  transition: box-shadow 300ms ease, transform 300ms ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Input Fields */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border 300ms ease;
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Read the Docs Link */
+.read-the-docs {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: color 300ms ease;
+}
+
+.read-the-docs:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
